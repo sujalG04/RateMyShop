@@ -1,0 +1,52 @@
+# Node modules
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+backend/.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+logs/*
+debug.log
+error.log
+
+# Build output
+dist/
+build/
+
+# Database files
+*.sqlite
+*.db
+
+# Coverage reports
+coverage/
+
+# Cache
+.cache/
+*.cache
+tmp/
+temp/
+
+# VSCode settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# React specific
+*.env.development
+*.env.production
+*.env.test
+
+# Server specific
+uploads/
