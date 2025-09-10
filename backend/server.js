@@ -27,7 +27,7 @@ pool.connect((err, client, release) => {
 
 // Middleware
 app.use(cors({
-  origin: ["http://localhost:5173", "https://your-frontend-domain.vercel.app"], // allow local + deployed frontend
+  origin: ["*","http://localhost:5173", "https://your-frontend-domain.vercel.app"], // allow local + deployed frontend
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true

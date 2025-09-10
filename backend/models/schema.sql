@@ -44,12 +44,8 @@ CREATE INDEX idx_stores_owner ON stores(owner_id);
 CREATE INDEX idx_ratings_user ON ratings(user_id);
 CREATE INDEX idx_ratings_store ON ratings(store_id);
 
--- add admin for handle webapp
-INSERT INTO users (name, email, password, address, role)
-VALUES (
-  'Administrator Default User',   -- 27 chars (valid length for name)
-  'admin@example.com',
-  'admin1234!',                   -- ⚠️ For real use: hash with bcrypt
-  'Head Office, Main Street',
-  'admin'
-);
+-- first register as user after that change role 
+
+UPDATE users 
+SET role = 'admin', updated_at = CURRENT_TIMESTAMP 
+WHERE email = 'admin@example.com';
