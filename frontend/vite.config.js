@@ -8,4 +8,10 @@ export default defineConfig({
   plugins: [viteSourceLocator({
     prefix: 'mgx'
   }), react()],
+  server:{
+    proxy:{
+      // '/api':'https://rate-my-shop-backend.vercel.app'
+      '/api':'https://localhost:5000'
+    },
+  }
 })
