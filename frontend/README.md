@@ -1,5 +1,5 @@
 # Store Rating System
-
+# change
 A full-stack web application for managing stores, users, and ratings with role-based access control.
 
 ## Features
